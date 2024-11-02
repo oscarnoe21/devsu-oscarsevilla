@@ -1,0 +1,944 @@
+{
+	"info": {
+		"_postman_id": "928f2675-b845-4294-94a5-e0c183bf4b80",
+		"name": "DEVSU-OscarSevilla",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "439174",
+		"_collection_link": "https://crimson-satellite-1523.postman.co/workspace/MiCuentaDevelopQA~afe5a8a2-bec9-4f48-867c-ad48b6a69e83/collection/439174-928f2675-b845-4294-94a5-e0c183bf4b80?action=share&source=collection_link&creator=439174"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "Clientes-MostrarTodos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8081/clientes/all",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"clientes",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Clientes-EliminarCliente",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8081/clientes/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Clientes-ModificarParcial",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clientId\": \"1\",\r\n    \"contrasena\": \"1\",\r\n    \"estado\": \"viudo\",\r\n    \"identificacion\": null,\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8081/clientes/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Clientes-ModificarTotal",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clientId\": \"1\",\r\n    \"contrasena\": \"1\",\r\n    \"estado\": \"viudo\",\r\n    \"identificacion\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8081/clientes/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Clientes-Crear",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clientId\": \"1\",\r\n    \"contrasena\": \"1234\",\r\n    \"estado\": \"viudo\",\r\n    \"identificacion\": \"15085\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8081/clientes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cuentas",
+			"item": [
+				{
+					"name": "Cuentas-TodasLasCuentas",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8082/cuentas/all",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"cuentas",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cuentas-Modificacion Cuenta",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCuenta\": \"1234567890-002\",\r\n    \"tipoCuenta\":\"Ahorro\",\r\n    \"saldoInicial\":1.0,\r\n    \"estado\":\"nuevo\",\r\n    \"clientId\":\"1kkkk\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8082/cuentas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cuentas-Creacion Cuenta",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCuenta\": \"1234567890-002\",\r\n    \"tipoCuenta\":\"Ahorro\",\r\n    \"saldoInicial\":1.0,\r\n    \"estado\":\"nuevo\",\r\n    \"clientId\":\"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8082/cuentas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cuentas-Modificacion Parcial Cuenta",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCuenta\": \"1234567890-002\",\r\n    \"tipoCuenta\":\"Ahorro\",\r\n    \"saldoInicial\":1.0,\r\n    \"estado\":\"nuevo\",\r\n    \"clientId\":\"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8082/cuentas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cuentas-Eliminar Cuenta",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCuenta\": \"1234567890-002\",\r\n    \"tipoCuenta\":\"Ahorro\",\r\n    \"saldoInicial\":1.0,\r\n    \"estado\":\"nuevo\",\r\n    \"clientId\":\"1kkkk\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8082/cuentas/1234567890-002",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"cuentas",
+								"1234567890-002"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movimientos",
+			"item": [
+				{
+					"name": "Movimientos-Todos los Movimientos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCuenta\": \"1234567890-002\",\r\n    \"tipoCuenta\":\"Ahorro\",\r\n    \"saldoInicial\":1.0,\r\n    \"estado\":\"nuevo\",\r\n    \"clientId\":\"1kkkk\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8082/movimientos/all",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"movimientos",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Movimientos-Movimiento Por Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCuenta\": \"1234567890-002\",\r\n    \"tipoCuenta\":\"Ahorro\",\r\n    \"saldoInicial\":1.0,\r\n    \"estado\":\"nuevo\",\r\n    \"clientId\":\"1kkkk\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8082/movimientos/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"movimientos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Movimientos-Crear Movimiento",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fecha\": \"2024-10-30\",\r\n    \"tipoMovimiento\":\"Ahorro\",\r\n    \"valor\":1.0,\r\n    \"saldo\":0,\r\n    \"numeroCuenta\":\"1234567890-002\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8082/movimientos",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Movimientos-Modificar Movimiento",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fecha\": \"2024-10-30\",\r\n    \"tipoMovimiento\":\"Cheques\",\r\n    \"valor\":1.0,\r\n    \"saldo\":1.0,\r\n    \"numeroCuenta\":\"1234567890-001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8082/movimientos/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"movimientos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Movimientos-Modificar Movimiento Parcial",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fecha\": \"2024-10-30\",\r\n    \"tipoMovimiento\":\"Ahorro\",\r\n    \"valor\":1.0,\r\n    \"saldo\":1.0,\r\n    \"numeroCuenta\":\"1234567890-001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8082/movimientos/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"movimientos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Movimientos-Modificar Parcial Movimiento",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fecha\": \"2024-10-30\",\r\n    \"tipoMovimiento\":\"Cheques\",\r\n    \"valor\":1.0,\r\n    \"saldo\":1.0,\r\n    \"numeroCuenta\":\"1234567890-001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8082/movimientos/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"movimientos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Personas",
+			"item": [
+				{
+					"name": "Personas-modificarPersona",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"oscar\",\r\n    \"genero\": \"masculino\",\r\n    \"edad\": 30,\r\n    \"direccion\": \"olancho\",\r\n    \"telefono\": \"1234567890\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8081/personas/15085",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"personas",
+								"15085"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Personas-Todas las personas",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8081/personas/all",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"personas",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Personas-por identificacion",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8081/personas/1508",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"personas",
+								"1508"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Personas-crear persona",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"oscar\",\r\n    \"genero\": \"masculino\",\r\n    \"edad\": 33,\r\n    \"identificacion\": \"15085\",\r\n    \"direccion\": \"olancho\",\r\n    \"telefono\": \"1234567890\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8081/personas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Personas-eliminarPersona",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"oscar\",\r\n    \"genero\": \"masculino\",\r\n    \"edad\": 30,\r\n    \"direccion\": \"olancho\",\r\n    \"telefono\": \"1234567890\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8081/personas/15085",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8081",
+							"path": [
+								"personas",
+								"15085"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reporte",
+			"item": [
+				{
+					"name": "reporte",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCuenta\": \"1234567890-002\",\r\n    \"tipoCuenta\":\"Ahorro\",\r\n    \"saldoInicial\":1.0,\r\n    \"estado\":\"nuevo\",\r\n    \"clientId\":\"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8082/reportes/1?fechaFin=2024-12-01&fechaInicio=2024-01-01",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8082",
+							"path": [
+								"reportes",
+								"1"
+							],
+							"query": [
+								{
+									"key": "fechaFin",
+									"value": "2024-12-01"
+								},
+								{
+									"key": "fechaInicio",
+									"value": "2024-01-01"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Clientes-Swagger json",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/v3/api-docs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v3",
+						"api-docs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clientes-Swagger yaml",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/v3/api-docs.yaml",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v3",
+						"api-docs.yaml"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cuentas-Swagger json",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8082/v3/api-docs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"v3",
+						"api-docs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cuentas-Swagger yaml",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Basic eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im9zY2FyIiwiaWF0IjoxNzMwMDgyNTk1LCJleHAiOjE3MzAwODYxOTV9.xyxqOtFfGHj6pMgDB7uqx3qtiB-3w_xrclbUh2hMutY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8082/v3/api-docs.yaml",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"v3",
+						"api-docs.yaml"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
